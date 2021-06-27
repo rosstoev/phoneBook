@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="Demo2.AddContact"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Demo2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" d:DesignWidth="424">
+
+    <StackPanel Margin="0,0,10,0">
+        <TextBlock Padding="150,0,0,0">Добави контакт</TextBlock>
+        <StackPanel>
+            <TextBlock x:Name="ContactId" Visibility="Collapsed"/>
+            <TextBox Name="Name" Header= "Име" Margin="0,24,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left" InputScope="PersonalFullName"/>
+            <TextBox Name="PhoneNumber" Header="Телефон" Margin="0,24,0,0" MaxLength="15" Width="400" HorizontalAlignment="Left" InputScope="TelephoneNumber" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Save" Margin="0,24" Click="SaveButton_Click"/>
+        </StackPanel>
+    </StackPanel>
+    
+</Page>
